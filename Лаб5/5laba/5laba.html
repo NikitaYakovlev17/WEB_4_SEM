@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<head>
+	<title>5laba</title>
+   	<meta charset=utf-8>
+	<script language="JavaScript" type="text/javascript" src="https://comet-server.com/js/lib/jquery.min.js" ></script>
+	<script language="JavaScript" type='text/javascript' src="https://comet-server.com/CometServerApi.js" ></script>
+</head>
+    <body>
+        <div id="WebChatFormForm" ></div> 
+        <input type="text" id="WebChatNameID" placeholder="Your name"><br><br>
+
+        <textarea id = "WebChatTextID" placeholder = "Write a message..."></textarea><br>
+        
+        <input type="button" onclick="web_send_msg();" value="Send a message">
+        <div id="answer_div" ></div>
+        
+        <script>
+              var date= new Date();
+             function web_send_msg()
+             {
+             
+                 var text = $("#WebChatTextID").val(); 
+                 var name = $("#WebChatNameID").val(); 
+                
+      
+                 $("#WebChatTextID").val("");                  
+                 $("#WebChatFormForm").append("<p><b>"+name+": </b>"+text+"</p>"+date);
+                 
+                 CometServer().web_pipe_send("web_chat", {"text":text, "name":name});
+             }
+             
+                
+             $(document).ready(function()
+             {
+                 CometServer().start() //подключаемся к серверу
+                 
+                 CometServer().subscription("web_chat", function(msg)
+                 {
+                     $("#WebChatFormForm").append("<p><b>"+msg.data.name+": </b>"+msg.data.text+"</p>"+date);
+                 });
+             });
+        </script>
+    
+    </body>
+
+
+
+    <!-- вызов CometServer().web_pipe_send() производит непосредственно отправку сообщения всем остальным участникам онлайн чата. 
+        Первый аргумент- имя канала в который мы отправим сообщение. 
+        Второй аргумент - сообщение, содержащие имя отправителя и текст сообщения.
+--> 
+</html>
+
+

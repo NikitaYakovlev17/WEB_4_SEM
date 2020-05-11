@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab9</title>
+	<script src = "http://code.jquery.com/jquery-latest.js"></script>
+	<script src = "js/bootstrap.bundle.min.js"></script>
+	<link href = "css/bootstrap.min.css"rel = "stylesheet">
+
+		<!—Bootstrap CSS-->
+		<style type="text/css">
+			#first_btn{
+				margin: 5px;
+			}
+		</style>
+
+</head>
+<body>
+	<!—Bootstrap JS-->
+	<!-- Button trigger modal -->
+	<button type="button" id="first_btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >
+	  Запустить модальное окно
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Модальное окно</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body text-uppercase">
+	        whats poppin
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+	        <button type="button" class="btn btn-primary">Сохранить</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
+
+</body>
+</html>

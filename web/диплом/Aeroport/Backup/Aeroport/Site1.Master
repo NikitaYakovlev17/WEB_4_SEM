@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Aeroport.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Автоматизированная система учета грузов в аэропорту. 
+                </h1>
+            </div>
+            
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Справочная информация" Value="Справочная информация">
+                            <asp:MenuItem NavigateUrl="~/Operation.aspx" Text="Виды операций" 
+                                Value="Виды операций"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/plane.aspx" Text="Самолеты" Value="Самолеты">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Type.aspx" Text="Типы грузов" 
+                                Value="Типы грузов"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Dolgn.aspx" Text="Должности" Value="Должности">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Workers.aspx" Text="Сотрудники" 
+                                Value="Сотрудники"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Port.aspx" Text="Аэропорты" Value="Аэропорты">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Добавить груз" Value="Сведения о грузах" 
+                            NavigateUrl="~/Gruz.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Погрузка/отгрузка груза" Value="Грузоперевозки" 
+                            NavigateUrl="~/Add.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

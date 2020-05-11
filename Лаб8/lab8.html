@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab8</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		
+			var Arr = {
+				key1 : 5,
+				key2 : 1,
+				key3 : 4,
+				key4 : 2,
+				key5 : 3
+			};
+
+			function Show(){
+				jsonStr = JSON.stringify(Arr);
+				document.write(jsonStr);
+		}
+
+
+		function Find_max_min(){
+			min = Arr.key1;
+	  		max = min;
+			for(key in Arr){
+	  			if(Arr[key] > max) max = Arr[key];
+	  			if(Arr[key] < min) min = Arr[key];
+			}
+			document.write('Минимальный элемент : ' + min + '<br>');
+			document.write('Максимальный элемент : ' + max + '<br>');			
+			
+		}
+
+	</script>
+
+</head>
+<body>	
+	<div>
+	    <input type="button" value="Show_array" onclick="Show()">
+	
+	    <input type="button" value="Find_max_min" onclick="Find_max_min()">
+	</div>
+</body>
+</html>

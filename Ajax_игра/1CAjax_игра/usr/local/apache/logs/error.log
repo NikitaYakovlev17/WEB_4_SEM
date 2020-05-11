@@ -1,0 +1,39 @@
+[Wed Feb 12 10:11:33 2020] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Feb 12 10:11:33 2020] [warn] pid file W:/usr/local/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Feb 12 10:11:33 2020] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Feb 12 10:11:33 2020] [notice] Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 configured -- resuming normal operations
+[Wed Feb 12 10:11:33 2020] [notice] Server built: Apr 20 2012 18:42:30
+[Wed Feb 12 10:11:33 2020] [notice] Parent: Created child process 3508
+[Wed Feb 12 10:11:33 2020] [notice] Disabled use of AcceptEx() WinSock2 API
+[Wed Feb 12 10:11:33 2020] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Feb 12 10:11:33 2020] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Feb 12 10:11:33 2020] [notice] Child 3508: Child process is running
+[Wed Feb 12 10:11:33 2020] [notice] Child 3508: Acquired the start mutex.
+[Wed Feb 12 10:11:33 2020] [notice] Child 3508: Starting 25 worker threads.
+[Wed Feb 12 10:11:33 2020] [notice] Child 3508: Listening on port 443.
+[Wed Feb 12 10:11:33 2020] [notice] Child 3508: Listening on port 80.
+[Wed Feb 12 10:14:37 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/favicon.ico, referer: http://localhost/
+[Wed Feb 12 10:14:37 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/favicon.ico, referer: http://localhost/index.html
+[Wed Feb 12 10:22:33 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:22:34 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:22:36 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:26:12 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/door.php status=, referer: http://localhost/index.html
+[Wed Feb 12 10:26:37 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/door.php&status=, referer: http://localhost/index.html
+[Wed Feb 12 10:26:38 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/door.php&status=, referer: http://localhost/index.html
+[Wed Feb 12 10:27:20 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:21 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:22 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:22 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:22 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:22 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:26 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:27 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:27:27 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/folder, referer: http://localhost/index.html
+[Wed Feb 12 10:46:24 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:47:35 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:48:37 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:48:53 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:49:32 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:49:39 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:49:45 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/system, referer: http://localhost/index.html
+[Wed Feb 12 10:58:14 2020] [error] [client 127.0.0.1] File does not exist: W:/home/localhost/www/systems/engine.php&method=getkey, referer: http://localhost/index.html

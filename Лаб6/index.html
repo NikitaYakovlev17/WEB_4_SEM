@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab6</title>
+	<script>
+		function Value(){
+			let student = {
+				name : "Nikta",
+				s_name: "Yakovlev",
+				age: 18
+			};
+
+			let json = JSON.stringify(student);
+			json = JSON.parse(json);
+			document.write("Значение : " + json.name);
+		}
+	
+
+		function Array(){
+			let numbers = ["Никита", "Федя", "Михаил"];
+			let json = JSON.stringify(numbers);
+			json = JSON.parse(json);
+			document.write("Массив : " + json);
+		}
+
+		function Max_Array_Value(){
+			let strSplit = ["Никита", "Федя", "Александр"];
+			var longestWord = 0;
+		 	for(var i = 0; i < strSplit.length; i++){
+		    	if(strSplit[i].length > longestWord){ // If strSplit[i].length больше, чем сравнимое слово...
+				longestWord = strSplit[i].length;
+				word = strSplit[i]; }// ...затем longestWord принимает новое значение		
+			}
+
+			let json = JSON.stringify(word);
+			json = JSON.parse(json);
+			document.write("Самое длинное слово : " +  json);
+		}
+
+	</script>
+</head>
+<body>
+	<input type="button" onclick="Value()" value="Вывести значение">
+
+	<input type="button" onclick="Array()" value="Вывести массив">
+
+	<input type="button" onclick="Max_Array_Value()" value="Вывести самое длинное слово массива">
+
+</body>
+</html>

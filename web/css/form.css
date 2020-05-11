@@ -1,0 +1,7 @@
+#signup {
+	display: none;
+}
+#signup input {
+	display: block;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="windows-1251">
+    <title>lab2</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+
+        function sec() {
+            var txt = $('#text').val();
+            $.ajax({
+                type: "GET",
+                url: "Change.php",
+                data: { mytxt: txt },
+            }).done(function (result) {
+                $("#change2").html(result);
+            });
+        }
+
+        function frs() {
+            var txt = $('#text').val();
+            $.ajax({
+                type: "GET",
+                url: "Change.php",
+                data: { mytxt: txt }
+            }).done(function (result) {
+                $("#change1").html(result);
+            });
+        }
+
+        function Add() {
+            var txt = $('#text').val();
+            var oldtxt = document.getElementById("add_new").outerHTML;
+            $.ajax({
+                type: "GET",
+                url: "Add.php",
+                data: { mytxt: txt, oldtxt: oldtxt }
+            }).done(function (result) {
+                $("#add_new").html(result);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="edit">
+        <input type="text" id="text">
+        <input type="button" value="Add" onclick="Add()">
+    </div>
+    <div>
+        <div>
+            <h5 id="change1">First comm</h5>
+            <input type="button" onclick="frs()" value="change">
+        </div>
+        <div>
+            <h5 id="change2">Sec comm</h5>
+            <input type="button" onclick="sec()" value="change">
+        </div>
+        <div id="add_new">
+        </div>
+    </div>
+</body>
+
+</html>

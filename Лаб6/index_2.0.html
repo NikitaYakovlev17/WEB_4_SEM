@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab6</title>
+    <meta content="text/html; charset=utf-8" />
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <style>
+
+     .newDiv
+     {
+      background-color:red;
+  	 }
+
+
+     </style>
+  </head>
+  <body>
+  <div class="newDiv" id="json" style="heigh: 66px; width: 66px" onclick="toJson()">JSON</div>
+  <div id="div0">div0</div>
+  <h1>h1</h1>
+  <p>p
+  <div id="div1">div1</div>
+  <div id="div2">div2</div>
+  </p>
+  <div id="changed">some content</div>
+  <script>
+
+ $('div').click(function(){
+ var thisElement = $(this).context;
+
+ var jsoneddiv = JSON.stringify({className: thisElement.className, tagName: thisElement.tagName.toLowerCase(), id: thisElement.id});
+
+
+ unjsoneddiv = JSON.parse(jsoneddiv);
+
+ alert(jsoneddiv);
+ 
+ });
+
+  var e1 = {
+      id: document.getElementById('div2').id,
+      tag: document.getElementById('div2').tag,
+      newContent: "x",
+      oldContent: document.getElementById('div2').innerHTML
+  }
+  var mas = [{
+      id: document.getElementById('div0').id,
+      tag: document.getElementById('div0').tag,
+      newContent: '<p style="font-size: 24px">new paraghraph</p>',
+      oldContent: document.getElementById('div0').innerHTML
+  },
+  {
+      id: document.getElementById('div1').id,
+      tag: document.getElementById('div1').tag,
+      newContent: "name2",
+      oldContent: document.getElementById('div1').innerHTML
+  },
+  e1
+  ];
+
+  var domElement = {
+      tag: document.getElementById('changed').tagName,
+      id: document.getElementById('changed').id,
+      content:document.getElementById('changed').innerHTML
+  }
+
+  var jsonedMas = JSON.stringify(mas);
+  alert(jsonedMas);
+  var jsonedStr = JSON.stringify(domElement);
+  document.write(jsonedStr);
+
+  var unJsonedMas = JSON.parse(jsonedMas);
+ 
+  for(var i = 0; i < unJsonedMas.length; i++)
+  {
+      var innerElement = document.getElementById(unJsonedMas[i].id).innerHTML = unJsonedMas[i].newContent;
+  }
+
+  </script>
+
+  </body>
+</html>

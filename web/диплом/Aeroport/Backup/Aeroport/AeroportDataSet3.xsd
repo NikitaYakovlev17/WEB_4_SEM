@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AeroportDataSet3" targetNamespace="http://tempuri.org/AeroportDataSet3.xsd" xmlns:mstns="http://tempuri.org/AeroportDataSet3.xsd" xmlns="http://tempuri.org/AeroportDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AeroportConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AeroportConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AeroportConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_4TableAdapter" GeneratorDataComponentClassName="View_4TableAdapter" Name="View_4" UserDataComponentName="View_4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AeroportConnectionString (Web.config)" DbObjectName="Aeroport.dbo.View_4" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT КодГруза, ДатаПоступления, Статус, Вес, Тип, ДатаПогрузки, Самолет, [От куда] FROM dbo.View_4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="КодГруза" DataSetColumn="КодГруза" />
+              <Mapping SourceColumn="ДатаПоступления" DataSetColumn="ДатаПоступления" />
+              <Mapping SourceColumn="Статус" DataSetColumn="Статус" />
+              <Mapping SourceColumn="Вес" DataSetColumn="Вес" />
+              <Mapping SourceColumn="Тип" DataSetColumn="Тип" />
+              <Mapping SourceColumn="ДатаПогрузки" DataSetColumn="ДатаПогрузки" />
+              <Mapping SourceColumn="Самолет" DataSetColumn="Самолет" />
+              <Mapping SourceColumn="От куда" DataSetColumn="От куда" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AeroportDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AeroportDataSet3" msprop:Generator_UserDSName="AeroportDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_4" msprop:Generator_TableClassName="View_4DataTable" msprop:Generator_TableVarName="tableView_4" msprop:Generator_TablePropName="View_4" msprop:Generator_RowDeletingName="View_4RowDeleting" msprop:Generator_UserTableName="View_4" msprop:Generator_RowChangingName="View_4RowChanging" msprop:Generator_RowEvHandlerName="View_4RowChangeEventHandler" msprop:Generator_RowDeletedName="View_4RowDeleted" msprop:Generator_RowEvArgName="View_4RowChangeEvent" msprop:Generator_RowChangedName="View_4RowChanged" msprop:Generator_RowClassName="View_4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="КодГруза" msprop:Generator_ColumnVarNameInTable="columnКодГруза" msprop:Generator_ColumnPropNameInRow="КодГруза" msprop:Generator_ColumnPropNameInTable="КодГрузаColumn" msprop:Generator_UserColumnName="КодГруза" type="xs:int" />
+              <xs:element name="ДатаПоступления" msprop:Generator_ColumnVarNameInTable="columnДатаПоступления" msprop:Generator_ColumnPropNameInRow="ДатаПоступления" msprop:Generator_ColumnPropNameInTable="ДатаПоступленияColumn" msprop:Generator_UserColumnName="ДатаПоступления" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Статус" msprop:Generator_ColumnVarNameInTable="columnСтатус" msprop:Generator_ColumnPropNameInRow="Статус" msprop:Generator_ColumnPropNameInTable="СтатусColumn" msprop:Generator_UserColumnName="Статус" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вес" msprop:Generator_ColumnVarNameInTable="columnВес" msprop:Generator_ColumnPropNameInRow="Вес" msprop:Generator_ColumnPropNameInTable="ВесColumn" msprop:Generator_UserColumnName="Вес" type="xs:int" minOccurs="0" />
+              <xs:element name="Тип" msprop:Generator_ColumnVarNameInTable="columnТип" msprop:Generator_ColumnPropNameInRow="Тип" msprop:Generator_ColumnPropNameInTable="ТипColumn" msprop:Generator_UserColumnName="Тип" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ДатаПогрузки" msprop:Generator_ColumnVarNameInTable="columnДатаПогрузки" msprop:Generator_ColumnPropNameInRow="ДатаПогрузки" msprop:Generator_ColumnPropNameInTable="ДатаПогрузкиColumn" msprop:Generator_UserColumnName="ДатаПогрузки" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Самолет" msprop:Generator_ColumnVarNameInTable="columnСамолет" msprop:Generator_ColumnPropNameInRow="Самолет" msprop:Generator_ColumnPropNameInTable="СамолетColumn" msprop:Generator_UserColumnName="Самолет" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="От_x0020_куда" msprop:Generator_ColumnVarNameInTable="columnОт_куда" msprop:Generator_ColumnPropNameInRow="От_куда" msprop:Generator_ColumnPropNameInTable="От_кудаColumn" msprop:Generator_UserColumnName="От куда" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_4" />
+      <xs:field xpath="mstns:КодГруза" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Aeroport.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Автоматизированная система учета грузов в аэропорту. 
+                </h1>
+            </div>
+            
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Справочная информация" Value="Справочная информация">
+                            <asp:MenuItem NavigateUrl="~/SPR_Operation.aspx" Text="Виды операций" 
+                                Value="Виды операций"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPR_plane.aspx" Text="Самолеты" Value="Самолеты">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPR_Type.aspx" Text="Типы грузов" 
+                                Value="Типы грузов"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPR_Dolgn.aspx" Text="Должности" Value="Должности">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPR_Workers.aspx" Text="Сотрудники" 
+                                Value="Сотрудники"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPR_Port.aspx" Text="Аэропорты" Value="Аэропорты">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Сведения о грузах" Value="Сведения о грузах">
+                            <asp:MenuItem NavigateUrl="~/Doc_Gruz.aspx" Text="Добавить груз" 
+                                Value="Добавить груз"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Погрузка/отгрузка груза" Value="Грузоперевозки" 
+                            NavigateUrl="~/Doc_Add.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Отчеты" Value="Отчеты">
+                            <asp:MenuItem NavigateUrl="~/Rep_Prinyati.aspx" 
+                                Text="О грузах запланированных к отправке" 
+                                Value="О грузах запланированных к отправке"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Rep_Send.aspx" Text="Об отправленных грузах" 
+                                Value="Об отправленных грузах"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Rep_Recive.aspx" Text="О принятых грузах" 
+                                Value="О принятых грузах"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Справка" Value="Справка" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Администрирование" Value="Администрирование">
+                            <asp:MenuItem NavigateUrl="~/SPR_users.aspx" Text="Работа с пользователями" 
+                                Value="Работа с пользователями"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

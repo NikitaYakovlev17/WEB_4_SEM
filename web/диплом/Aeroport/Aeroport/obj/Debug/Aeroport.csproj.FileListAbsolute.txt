@@ -1,0 +1,6 @@
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\bin\Aeroport.dll
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\bin\Aeroport.pdb
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\obj\Debug\RdlCompile.cache
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\obj\Debug\RdlCompile.compiled
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\obj\Debug\Aeroport.dll
+C:\Users\3MA\Documents\1\Aeroport\Aeroport\obj\Debug\Aeroport.pdb
